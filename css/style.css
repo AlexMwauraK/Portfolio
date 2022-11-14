@@ -5,12 +5,16 @@
     padding: 0px;
     box-sizing: border-box;
 }
+html, body{
+    height: 100%;
+}
 .background{
-    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(/img/Wallpaper-Cool-Dark-HD-1536x864.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url(/img/Wallpaper-Cool-Dark-HD-1536x864.jpg);
     width: 100%;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
     height: 100vh;
 }
 nav{
@@ -18,6 +22,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+    height: 6vh;
     background-color: rgba(0,0,0,0.7);
 }
 .logoimg{
@@ -81,17 +86,14 @@ nav{
     margin: 5px;
     background-color: #fff;
 }
-section{
-    /* border: solid 1px red; */
+.details{
     width: 100%;
-    height: 100vh;
 }
 .info{
     color: rgb(230, 254, 255);
     /* background-color: rgb(51, 69, 170); */
     display: flex;
-    margin: 100px 30px;
-    position: absolute;
+    margin: 100px 30px 10px;
 }
 .hi{
     color: aqua;
@@ -107,16 +109,17 @@ section{
 }
 .intro{
     color: #fff;
-    margin: 170px 30px;
-    position: absolute;
-    font-family: 'Righteous', cursive;
+    /* position: absolute; */
+    font-family: 'Righteous';
+    font-size: 15px;
     word-spacing: 2px;
     line-height: 20px;
+    margin-left: 30px;
 }
 .view{
     display: flex;
     justify-content: space-around;
-    margin-top: 380px;
+    margin-top: 60px;
     margin-left: 230px;
 }
 .view a{
@@ -195,17 +198,23 @@ section{
     transition: 1s;
     transition-delay: 0.75s;
 }
+.socialdiv{
+    /* margin-top: 19%; */
+    width: 100%;
+    bottom: 0px;
+    position: absolute;
+    height: 9vh;
+}
 .socials{
     list-style: none;
     display: flex;
-    position: absolute;
+    position: relative;
     align-items: center;
     /* background-color: red; */
     /* justify-content: space-around; */
     justify-content: center;
     height: 8vh;
     width: 100%;
-    margin-top: 200px;
 }
 .socials li a{
     text-decoration: none;
@@ -231,11 +240,17 @@ section{
         flex-direction: column;
         text-transform: uppercase;
         align-items: center;
-        top: 8vh;
+        top: 6vh;
     }
     .navlinks li{
         padding: 15px;
         /* background-color: #fff; */
         position: relative;
+    }
+    .my{
+        font-size: 16px;
+    }
+    .name{
+        font-size: 22px;
     }
 }
