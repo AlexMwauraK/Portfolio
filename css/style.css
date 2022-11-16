@@ -4,6 +4,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    
 }
 html, body{
     height: 100%;
@@ -25,23 +26,20 @@ nav{
     height: 6vh;
     background-color: rgba(0,0,0,0.7);
 }
-.logoimg{
-    scale: 50%;
-    position: absolute;
-    margin-top: -14px;
-    margin-left: -13px;
-    display: flex;
+.logo img{
+    width: 30px;
+    padding-right: 5px;
 }
-.logoimg:hover{
-    rotate: 360deg;
-    scale: 60%;
+.logo a:hover{
     transition: 3s ease-in-out;
+    rotate: 360deg;
+    scale: 105%;
+    padding: 2px;
 }
 .logo{
     color: #fff;
     display: flex;
     font-size: 22px;
-    margin-left: 50px;
     align-items: center;
     font-weight: bold;
     letter-spacing: 2px;
@@ -104,7 +102,7 @@ nav{
     margin-left: 30px;
 }
 .name{
-    font-size: 32px;
+    font-size: 50px;
     color: blanchedalmond;
 }
 .intro{
@@ -199,10 +197,9 @@ nav{
     transition-delay: 0.75s;
 }
 .socialdiv{
-    /* margin-top: 19%; */
+    margin-top: 18%;
     width: 100%;
-    bottom: 0px;
-    position: absolute;
+    position: relative;
     height: 9vh;
 }
 .socials{
@@ -222,7 +219,7 @@ nav{
     padding: 5px;
     display: flex;
     /* background-color: black; */
-    scale: 30%;
+    scale: 20%;
 }
 .socials li:hover{
     transition: .7s ease-out;
@@ -244,6 +241,7 @@ nav{
     }
     .navlinks li{
         padding: 15px;
+        display: none;
         /* background-color: #fff; */
         position: relative;
     }
@@ -251,6 +249,9 @@ nav{
         font-size: 16px;
     }
     .name{
-        font-size: 22px;
+        font-size: 26px;
+    }
+    .socialdiv{
+        margin-top: 30%;
     }
 }
