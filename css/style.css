@@ -8,12 +8,14 @@
 }
 html, body{
     height: 100%;
+    width: 100%;
 }
 .background{
     background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url(/img/Wallpaper-Cool-Dark-HD-1536x864.jpg);
     width: 100%;
-    width: 100%;
+    height: 100%;
     background-size: cover;
+    /* border: solid 1px #fff; */
     background-repeat: no-repeat;
     position: relative;
     height: 100vh;
@@ -24,6 +26,7 @@ nav{
     justify-content: space-between;
     padding: 10px;
     height: 6vh;
+    /* border: solid 1px red; */
     background-color: rgba(0,0,0,0.7);
 }
 .logo img{
@@ -86,12 +89,14 @@ nav{
 }
 .details{
     width: 100%;
+    height: 50vh;
+    /* border: solid 1px blueviolet; */
 }
 .info{
     color: rgb(230, 254, 255);
     /* background-color: rgb(51, 69, 170); */
     display: flex;
-    margin: 100px 30px 10px;
+    margin: 20px 30px 10px;
 }
 .hi{
     color: aqua;
@@ -117,7 +122,6 @@ nav{
 .view{
     display: flex;
     justify-content: space-around;
-    margin-top: 60px;
     margin-left: 230px;
 }
 .view a{
@@ -197,29 +201,31 @@ nav{
     transition-delay: 0.75s;
 }
 .socialdiv{
-    margin-top: 18%;
+    position: absolute;
+    display: flex;
+    /* border: solid 1px blueviolet; */
+    height: 6vh;
     width: 100%;
-    position: relative;
-    height: 9vh;
+    bottom: 0px;
+    /* background-color: #fff; */
+    
 }
 .socials{
     list-style: none;
     display: flex;
-    position: relative;
     align-items: center;
-    /* background-color: red; */
-    /* justify-content: space-around; */
+    
     justify-content: center;
-    height: 8vh;
     width: 100%;
 }
 .socials li a{
-    text-decoration: none;
-    color: aqua;
-    padding: 5px;
+    width: 100%;
     display: flex;
-    /* background-color: black; */
-    scale: 20%;
+    justify-content: center;
+    padding: 30px;
+}
+.socials img{
+    width: 20px;
 }
 .socials li:hover{
     transition: .7s ease-out;
@@ -275,8 +281,8 @@ nav{
     .name{
         font-size: 26px;
     }
-    .socialdiv{
-        margin-top: 35%;
+    /* .socialdiv{
+        margin-top: 35%; */
     }
     .info{
         margin-left: 20px;
