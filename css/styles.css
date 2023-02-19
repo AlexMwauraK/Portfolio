@@ -1,0 +1,64 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.info{
+  position: absolute;
+  display: flex;
+  color: #FFF;
+  justify-content: space-between;
+  padding: 20px;
+  /* background-color: red; */
+  width: 100%;
+}
+.logo img{
+  border-radius: 100px;
+  box-shadow: 3px 2px 20px rgb(250, 124, 20), -5px 2px 10px rgb(20, 166, 250);
+  width: 50px;
+}
+.main{
+  height: 100vh;
+  display: flex;
+  background-color: #000;
+  align-items: center;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/img/background.png");
+  background-size: cover;
+  justify-content: center;
+}
+.content{
+  height: 500px;
+  width: 300px;
+  border-radius: 20px;
+  background-color: #e3e3e3;
+  box-shadow: 3px 2px 20px rgb(250, 124, 20), -5px 2px 10px rgb(20, 166, 250);
+}
+.links{
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+.links li{
+  list-style: none;
+  padding: 40px;
+  width: 100%;
+}
+.links a{
+  text-decoration: none;
+  padding: 10px;
+  display: flex;
+  font-size: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  color: #000;
+}
+.links a:hover{
+  letter-spacing: 2px;
+  background-color: rgba(0, 255, 149, 0.678);
+  box-shadow: 0 0 10px rgba(31, 74, 218, 0.5);
+  transition: 1s ease;
+  border-radius: 20px;
+}
