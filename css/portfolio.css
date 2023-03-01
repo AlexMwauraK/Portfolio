@@ -1,0 +1,226 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+  *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+  }
+  ::selection {
+    background: #5f457e;
+  }
+  body {
+    background-image: linear-gradient(rgba(0,0,0, 0.75),rgba(0,0,0, 0.75)), url(/img/background.jpg);
+    margin: 0;
+    background-size: cover;
+    background-repeat: repeat;
+  }
+  a{
+    text-decoration: none;
+  }
+  header {
+    width: 100%;
+    height: 50px;
+    background-color: #1b1b32;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+  }
+  .logo{
+    color: #e3e3e3;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+ h1{
+    font-size: 25px;
+  }
+  .sub{
+    color: rgba(255, 255, 0, 0.87);
+    font-size: 15px;
+    font-style: oblique;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: 'Dancing Script', cursive;
+  }
+  #logo {
+    width: 50px;
+    border-radius: 50px;
+    padding: 0.4rem;
+  }
+  
+  nav {
+    width: 50%;
+    max-width: 500px;
+    height: 50px;
+  }
+  
+  nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+  }
+  
+  nav > ul > li {
+    color: #dfdfe2;
+    margin: 0 0.2rem;
+    padding: 0.2rem;
+    box-shadow: 0 0 10px rgba(110, 110, 128, 0.5);
+    border-radius: 15px;
+    display: block;
+  }
+  
+  nav > ul > li:hover {
+    background-color: #dfdfe2;
+    border-radius: 15px;
+    
+    color: #1b1b32;
+    cursor: pointer;
+  }
+  
+  li > a {
+    color: inherit;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  main {
+    padding-top: 10px;
+  }
+  
+  section {
+    width: 90%;
+    margin: 0 auto 10px auto;
+    /* height: 100vh; */
+    color: #fff;
+    max-width: 100%;
+    
+  }
+  .land{
+    margin-top: 0px;
+    font-size: 20PX;
+    height: 100vh;
+    padding-top: 60px;
+    display: flex;
+  }
+  .landbox1{
+    /* background-color: #d0d0d5; */
+    width: 50%;
+    margin-top: 210px;
+  }
+  .landbox2{
+    /* background-color: #fff; */
+    width: 50%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .landbox2 img{
+    width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .name{
+    font-size: 60px;
+  }
+  .element{
+    color: aqua;
+    font-size: 30px;
+    text-shadow: 0 0 10px aqua;
+    caret-color: aqua;
+  }
+  h2 {
+    border-bottom: .5px solid #404046;
+    margin-top: 0px;
+    display: flex;
+    font-size: 20PX;
+    flex-direction: row-reverse;
+    padding-top: 60px;
+  }
+  .box{
+    display: flex;
+    color: #e3e3e3;
+    border-right: .5px solid #404046;
+    text-align: justify;
+    font-family: 'Poppins';
+    background-color: rgba(0, 0, 0, 0.212);
+  }
+  .box1, .box2{
+    width: 50%;
+    font-size: 20px;
+  }
+  button {
+    display: block;
+    margin: 40px auto;
+    width: 40%;
+    padding: 15px;
+    font-size: 23px;
+    background: #d0d0d5;
+    border: 3px solid #3b3b4f;
+  }
+  
+  footer {
+    background-color: #2a2a40;
+    display: flex;
+    justify-content: center;
+  }
+  
+  footer,
+  footer a {
+    color: #dfdfe2;
+  }
+  
+  address {
+    text-align: center;
+    padding: 0.3em;
+  }
+  
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  @media only screen and (max-width: 600px) {
+    .box {
+      display: unset;
+      border-right: unset;
+    }
+    .box1, .box2{
+      width: 100%;
+      justify-content: center;
+    }
+    .landbox1{
+      min-width: 100%;
+      margin-top: 150px;
+      /* background-color: #fff; */
+    }
+    .landbox2{
+      display: none;
+    }
+    .landbox2 img{
+      width: 200px;
+    }
+    .name{
+      font-size: 45px;
+    }
+    .element{
+      font-size: 27px;
+    }
+  }
