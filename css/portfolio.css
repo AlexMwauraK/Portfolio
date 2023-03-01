@@ -200,6 +200,7 @@
   @media only screen and (max-width: 600px) {
     .box {
       display: unset;
+      text-align: unset;
       border-right: unset;
     }
     .box1, .box2{
