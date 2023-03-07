@@ -309,44 +309,44 @@
   }
  
   @media only screen and (max-width: 720px) {
-    header{
-      position: absolute;
-      overflow: hidden;
-    }
     .navlinks{
       position: absolute;
+      top: 6.5vh;
       background-color: rgb(0, 0, 0,0.9);
-      border: solid 0.5px #fff;
+      border: solid 0.5px #ffffff63;
+      border-bottom-left-radius: 20px;
+      text-transform: uppercase;
       border-top: unset;
       border-right: unset;
-      right: 0px;
-      width: 50%;
-      height: 80%;
-      flex-direction: column;
-      text-transform: uppercase;
-      align-items: center;
-      top: 6.5vh;
+      height: 50vh;
       transform: translateX(100%);
-      overflow: auto;
       transition: transform 0.5s ease-in;
   }
   .navlinks li{
     padding: 10px;
     justify-content: center;
-    display: flex;
     background-color: #000;
     width: 90%;
-    position: relative;
-    
+    transition: .5s ease-in-out;
+}
+.navlinks li:hover{
+  color: #000;
+  background-color: #26db44;
 }
 .navlinks a{
   font-size: 14px;
   letter-spacing: 1px;
   align-items: center;
+  display: flex;
+  padding: 0px;
+  flex-direction: column;
   color: rgb(223, 223, 223);
   display: flex;
-  
 }
+.navlinks a:hover{
+  color: #000
+}
+
 .nav-active{
   transform: translateX(0%);
 }
