@@ -268,13 +268,18 @@
   button {
     display: block;
     margin: 40px auto;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
     width: 40%;
+    height: 10px;
     padding: 15px;
-    font-size: 23px;
     background: #d0d0d5;
-    border: 3px solid #3b3b4f;
+    border-radius: 20px;
   }
-  
+  .cv img{
+    width: 20px;
+  }
   footer {
     background-color: #2a2a40;
     display: flex;
@@ -303,7 +308,7 @@
     border: 0;
   }
  
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 720px) {
     header{
       position: absolute;
       overflow: hidden;
@@ -363,6 +368,12 @@
   display: flex;
   margin-top: 20px;
   gap: 10px;
+}
+button{
+  width: 60%;
+}
+.cv img{
+  width: 20px;
 }
 @keyframes navlinkFade {
   from{
