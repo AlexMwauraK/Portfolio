@@ -346,7 +346,10 @@
 .navlinks a:hover{
   color: #000
 }
-
+.navlinks li:nth-child(4) {
+  background: linear-gradient(120deg, #0090d8,#639702);
+  color: #000;
+}
 .nav-active{
   transform: translateX(0%);
 }
@@ -408,7 +411,7 @@ button{
       margin-top: 150px;
       /* background-color: #fff; */
     }
-    .landbox2{
+    .landbox2 img{
       display: none;
     }
     .landbox2 img{
