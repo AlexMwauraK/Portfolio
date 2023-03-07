@@ -11,16 +11,24 @@
   ::selection {
     background: #5f457e;
   }
+  ::-webkit-scrollbar{
+    width: 5px;
+    background-color: #000;
+  }
+  ::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent, rgba(0, 225, 255, 0.60));
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(transparent, rgb(0, 255, 157, 0.60));
+  }
   body {
     background-image: linear-gradient(rgba(0,0,0, 0.75),rgba(0,0,0, 0.75)), url(/img/background.jpg);
     margin: 0;
     background-size: cover;
     background-repeat: repeat;
   }
-  html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
+
   a{
     text-decoration: none;
   }
@@ -33,6 +41,7 @@
     align-items: center;
     position: fixed;
     top: 0;
+    z-index: 5;
   }
   .logo{
     color: #e3e3e3;
@@ -136,10 +145,14 @@
     justify-content: center;
   }
   .landbox2 img{
-    width: 550px;
+    width: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 500px;
+    margin: 0;
+    background-color: rgba(94, 94, 94, 0.295);
+    box-shadow: 0 0 20px rgba(127, 127, 139, 0.8);
   }
   .name{
     font-size: 60px;
@@ -165,10 +178,72 @@
     text-align: justify;
     font-family: 'Poppins';
     background-color: rgba(0, 0, 0, 0.212);
+    height: 90vh;
   }
   .box1, .box2{
     width: 50%;
     font-size: 20px;
+  }
+  .skillbox{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0px rgba(0, 0, 0, 0.37);
+    text-transform: uppercase;
+    height: 50%;
+    border-radius: 10px;
+    margin: 20px 50px 0px 50px;
+    display: flex;
+    transition: 1s ease-in-out;
+  }
+  .skillbox:hover{
+    background: linear-gradient(135deg, rgba(1, 204, 255, 0.5), rgba(125, 255, 73, 0.137));
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+  }
+  .languages{
+    /* background-color: red; */
+    height: 100%;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 0px 0px 10px;
+    display: flex;
+    text-align: right;
+  }
+  .languages li{
+    list-style: none;
+  }
+  .percentages{
+    width: 50%;
+    /* background-color: green; */
+    height: 100%;
+    text-align: left;
+    border-radius: 0px 10px 10px 0px;
+    
+    display: flex;
+  }
+  .percentages ul{
+    width: 50%;
+    height: 100%;
+    margin-top: 30px;
+    /* background-color: green; */
+  }
+  .percentages li{
+      list-style: none;
+      display: flex;
+      height: 5px;
+      margin-top: 27px;
+      justify-content: center;
+      align-items: center;
+      background-color: #e60c0c;
+      border-radius: 5px;
+      margin-right: 5px;
+      color: #fff;
+      text-align: center;
+      font-size: 5px;
+      line-height: 10px;
   }
   button {
     display: block;
@@ -207,11 +282,10 @@
     white-space: nowrap;
     border: 0;
   }
+ 
   @media only screen and (max-width: 600px) {
     header{
-      position: unset;
-    }
-    nav{
+      position: absolute;
       overflow: hidden;
     }
     .navlinks{
@@ -223,12 +297,12 @@
       right: 0px;
       width: 50%;
       height: 80%;
-      display: flex;
       flex-direction: column;
       text-transform: uppercase;
       align-items: center;
       top: 6.5vh;
       transform: translateX(100%);
+      overflow: auto;
       transition: transform 0.5s ease-in;
   }
   .navlinks li{
