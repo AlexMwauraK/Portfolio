@@ -353,8 +353,16 @@
     width: 15%;
     cursor: pointer;
 }
+.percentages ul{
+  padding-left: 5px;
+}
 .percentages li{
-  margin: 26px 0;
+  margin: 27.5px 0px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 20px;
+  gap: 10px;
 }
 @keyframes navlinkFade {
   from{
