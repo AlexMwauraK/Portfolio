@@ -214,37 +214,57 @@
   }
   .languages li{
     list-style: none;
+    margin: 9.5px 0px;
   }
-  .percentages{
-    width: 50%;
-    /* background-color: green; */
-    height: 100%;
-    text-align: left;
-    border-radius: 0px 10px 10px 0px;
-    
-    display: flex;
-  }
-  .percentages ul{
-    width: 50%;
-    height: 100%;
-    margin-top: 30px;
-    /* background-color: green; */
-  }
-  .percentages li{
-      list-style: none;
-      display: flex;
-      height: 5px;
-      margin-top: 27px;
-      justify-content: center;
-      align-items: center;
-      background-color: #e60c0c;
-      border-radius: 5px;
-      margin-right: 5px;
-      color: #fff;
-      text-align: center;
-      font-size: 5px;
-      line-height: 10px;
-  }
+ .percentages{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  width: 50%;
+ }
+ .percentages ul{
+  
+  align-items: center;
+  justify-content: center;
+  
+  text-align: center;
+ }
+ .percentages li{
+  background-color: green;
+  list-style: none;
+  font-size: 8px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin: 28px 0;
+ }
+ .percentages li:nth-child(1) {
+  background-color: #e46226da;
+}
+ .percentages li:nth-child(2) {
+  background-color: #2694cd;
+}
+ .percentages li:nth-child(3) {
+  background-color: #f0db4f;
+  color: #000;
+}
+ .percentages li:nth-child(4) {
+  background: linear-gradient(120deg, #2694cd,#f0db4f);
+  color: #000;
+}
+ .percentages li:nth-child(5) {
+  background-color: #2694cd;
+}
+ .percentages li:nth-child(6) {
+  background-color: rgba(29, 228, 228, 0.781);
+  color: #000;
+}
+ .percentages li:nth-child(7) {
+  background-color: #26db44;
+  color: #000;
+  
+}
+
   button {
     display: block;
     margin: 40px auto;
@@ -332,6 +352,9 @@
     margin-right: 10px;
     width: 15%;
     cursor: pointer;
+}
+.percentages li{
+  margin: 26px 0;
 }
 @keyframes navlinkFade {
   from{
