@@ -267,8 +267,7 @@
   color: #000;
   
 }
-
-  button {
+button {
     display: block;
     margin: 40px auto;
     justify-content: space-around;
@@ -282,6 +281,43 @@
   }
   .cv img{
     width: 20px;
+  }
+  .webdev{
+    /* background-color: #fff; */
+    display: flex;
+    width: unset;
+    justify-content: center;
+    height: 50%;
+    align-items: center;
+  }
+  .snames{
+    position: absolute;
+    background-color: rgba(255, 0, 0, 0.884);
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0 8px 32px 0px rgba(255, 0, 0, 0.884);
+    width: 17%;
+    display: flex;
+    z-index: 2;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+  }
+  .snames:hover{
+    background-color:#639702;
+    box-shadow: 0 8px 32px 0px rgba(0, 255, 0, 0.884);
+  }
+  .webdev img{
+    width: 200px;
+    border-radius: 20px;
+    object-fit: contain;
+    padding: 10px;
+    cursor: pointer;
+    filter: blur(1px);
+    transition: .5s ease-in-out;
+  }
+  .webdev img:hover{
+    width: 210px;
   }
   footer {
     background-color: #2a2a40;
@@ -414,6 +450,16 @@ button{
 }
 .cv img{
   width: 20px;
+}
+.snames{
+  width: 60%;
+}
+.webdev img:hover{
+  width: 210px;
+}
+.snames:hover{
+  background-color:#639702;
+  box-shadow: 0 8px 32px 0px rgba(0, 255, 0, 0.884);
 }
 @keyframes navlinkFade {
   from{
