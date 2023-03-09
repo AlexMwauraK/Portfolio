@@ -187,6 +187,14 @@
     width: 50%;
     font-size: 20px;
   }
+  .title{
+    display: flex;
+    margin-top: 5px;
+    font-family: Geneva;
+    font-size: 16px;
+    text-transform: uppercase;
+    justify-content: center;
+  }
   .skillbox{
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(10px);
@@ -290,13 +298,30 @@ button {
     height: 50%;
     align-items: center;
   }
+  .uxui{
+    display: flex;
+    width: unset;
+    justify-content: center;
+    height: 50%;
+    align-items: center;
+  }
+  .uxui img{
+    width: 200px;
+    border-radius: 20px;
+    object-fit: contain;
+    padding: 10px;
+    cursor: pointer;
+    filter: blur(1px);
+    transition: .5s ease-in-out;
+  }
   .snames{
     position: absolute;
-    background-color: rgba(255, 0, 0, 0.884);
+    background-color: rgba(0, 0, 0, 0.884);
     border-radius: 20px;
+    font-weight: bold;
     text-align: center;
     justify-content: center;
-    box-shadow: 0 8px 32px 0px rgba(255, 0, 0, 0.884);
+    box-shadow: 0 8px 32px 0px rgba(223, 223, 223, 0.623);
     width: 17%;
     display: flex;
     z-index: 2;
@@ -317,6 +342,9 @@ button {
     transition: .5s ease-in-out;
   }
   .webdev img:hover{
+    width: 210px;
+  }
+  .uxui img:hover{
     width: 210px;
   }
   footer {
