@@ -329,8 +329,9 @@ button {
     transition: .5s ease-in-out;
   }
   .snames:hover{
-    background-color:#639702;
-    box-shadow: 0 8px 32px 0px rgba(0, 255, 0, 0.884);
+    background: linear-gradient(135deg, rgba(1, 204, 255, 0.5), rgba(125, 255, 73, 0.8));
+    color: #000;
+    box-shadow: 0 8px 32px 0px rgba(102, 255, 0, 0.212);
   }
   .webdev img{
     width: 200px;
@@ -348,7 +349,7 @@ button {
     width: 210px;
   }
   footer {
-    background-color: #2a2a40;
+    background: linear-gradient(135deg, rgba(1, 90, 255, 0.320), rgba(88, 180, 52, 0.320));
     display: flex;
     justify-content: center;
   }
