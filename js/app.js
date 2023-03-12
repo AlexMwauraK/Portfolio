@@ -24,3 +24,19 @@ var typed = new Typed('.element', {
     backSpeed: 70,
     loop: true
   });
+
+  //Auto scroll animation
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting){
+        entry.target.classList.add('show');
+      } else{
+        entry.target.classList.remove('show');
+      }
+    }); 
+  });
+
+  const animateElements = document.querySelectorAll('.animate');
+  const skillboxElements = document.querySelectorAll('.skillbox');
+  animateElements.forEach((el) => observer.observe(el));
+  skillboxElements.forEach((el) => observer.observe(el));
