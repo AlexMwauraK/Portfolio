@@ -406,6 +406,32 @@ button {
   .uxui img:hover{
     width: 210px;
   }
+  .project-list{
+    /* background: #0090d8; */
+    padding: 10px 0px;
+    list-style: none;
+  }
+.project-list li{
+  margin: 9px;
+  padding: 8px 20px;
+  background-color: rgba(0, 225, 255, 0.60);
+  color: #000;
+  font-family: Helvatica;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+}
+.project-list li:hover{
+  background: linear-gradient(135deg, rgba(1, 90, 255, 0.8), rgba(88, 180, 52, 0.8));
+}
+.project-list img{
+  width: 30px;
+}
+.rate{
+  background-color: red;
+}
+
   footer {
     background: linear-gradient(135deg, rgba(1, 90, 255, 0.320), rgba(88, 180, 52, 0.320));
     display: flex;

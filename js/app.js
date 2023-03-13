@@ -40,3 +40,4 @@ var typed = new Typed('.element', {
   const skillboxElements = document.querySelectorAll('.skillbox');
   animateElements.forEach((el) => observer.observe(el));
   skillboxElements.forEach((el) => observer.observe(el));
+  
