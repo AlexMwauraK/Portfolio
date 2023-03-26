@@ -345,6 +345,15 @@ button {
     background: #d0d0d5;
     border-radius: 20px;
   }
+  .cv{
+    margin-top: 80px;
+
+  }
+  .cv:hover{
+    background-color: #d0d0d5;
+    letter-spacing: .5px;
+    transition: .5s ease-in-out;
+  }
   .cv img{
     width: 20px;
   }
@@ -406,6 +415,10 @@ button {
   .uxui img:hover{
     width: 210px;
   }
+  .ptitle{
+    display: flex;
+    justify-content: center;
+  }
   .project-list{
     /* background: #0090d8; */
     padding: 10px 0px;
@@ -414,7 +427,8 @@ button {
 .project-list li{
   margin: 9px;
   padding: 8px 20px;
-  background-color: rgba(0, 225, 255, 0.60);
+  background-color: rgba(0, 255, 255, 0.6);
+  box-shadow: 0 8px 32px 0px rgba(255, 255, 255, 0.39);
   color: #000;
   font-family: Helvatica;
   display: flex;
@@ -428,10 +442,6 @@ button {
 .project-list img{
   width: 30px;
 }
-.rate{
-  background-color: red;
-}
-
   footer {
     background: linear-gradient(135deg, rgba(1, 90, 255, 0.320), rgba(88, 180, 52, 0.320));
     display: flex;

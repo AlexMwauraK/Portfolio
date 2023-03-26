@@ -19,7 +19,7 @@ const navSlide = () => {
 navSlide();
 //Auto type
 var typed = new Typed('.element', {
-    strings: ["Front-End Developer", "Photographer", "ui/ux Designer"],
+    strings: ["Front-End Developer", "Photographer", "ui/ux Designer", "Graphic Designer"],
     typeSpeed: 50,
     backSpeed: 70,
     loop: true
