@@ -80,7 +80,10 @@
     margin-block: 0;
     height: 100%;
   }
-  
+  .navlinks li:nth-child(4) {
+    background: linear-gradient(120deg, #0090d8,#639702);
+    color: #000;
+  }
   nav > ul > li {
     color: #dfdfe2;
     margin: 0 0.2rem;
@@ -303,35 +306,35 @@
  }
  .percentages li:nth-child(1) {
   background-color: #e46226da;
-  transition-delay: 200ms;
+  transition-delay: 100ms;
 }
  .percentages li:nth-child(2) {
   background-color: #2694cd;
-  transition-delay: 400ms;
+  transition-delay: 250ms;
 }
  .percentages li:nth-child(3) {
   background-color: #f0db4f;
   color: #000;
-  transition-delay: 600ms;
+  transition-delay: 400ms;
 }
  .percentages li:nth-child(4) {
   background: linear-gradient(120deg, #2694cd,#f0db4f);
   color: #000;
-  transition-delay: 800ms;
+  transition-delay: 550ms;
 }
  .percentages li:nth-child(5) {
   background-color: #2694cd;
-  transition-delay: 1000ms;
+  transition-delay: 500ms;
 }
  .percentages li:nth-child(6) {
   background-color: rgba(29, 228, 228, 0.781);
   color: #000;
-  transition-delay: 1200ms;
+  transition-delay: 600ms;
 }
  .percentages li:nth-child(7) {
   background-color: #26db44;
   color: #000;
-  transition-delay: 1400ms;
+  transition-delay: 750ms;
 }
 button {
     display: block;
