@@ -310,17 +310,17 @@
 }
  .percentages li:nth-child(2) {
   background-color: #2694cd;
-  transition-delay: 250ms;
+  transition-delay: 200ms;
 }
  .percentages li:nth-child(3) {
   background-color: #f0db4f;
   color: #000;
-  transition-delay: 400ms;
+  transition-delay: 300ms;
 }
  .percentages li:nth-child(4) {
   background: linear-gradient(120deg, #2694cd,#f0db4f);
   color: #000;
-  transition-delay: 550ms;
+  transition-delay: 400ms;
 }
  .percentages li:nth-child(5) {
   background-color: #2694cd;
@@ -334,7 +334,7 @@
  .percentages li:nth-child(7) {
   background-color: #26db44;
   color: #000;
-  transition-delay: 750ms;
+  transition-delay: 700ms;
 }
 button {
     display: block;
