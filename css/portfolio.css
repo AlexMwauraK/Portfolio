@@ -160,7 +160,7 @@
     position: absolute;
     inset: -10px 140px;
     background: linear-gradient(135deg, rgb(1, 90, 255), rgb(72, 255, 0));
-    animation: animate 6s linear infinite;
+    animation: animate 10s linear infinite;
     transition: .5s ease-in-out;
   }
   .img-animation:hover:before{
